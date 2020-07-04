@@ -44,7 +44,7 @@ ${CATALINA_HOME}/bin/startup.sh
 http://localhost:8080/webapp_war/
 6. That's it! Enjoy choosing your games to play, reviewing them and interacting with other users!
 
-## Versions
+## Releases
 
 ### v1.0.1
 
