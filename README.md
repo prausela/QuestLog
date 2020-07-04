@@ -1,18 +1,45 @@
 # QuestLog
 
-## CUENTA ADMINISTRADOR:
+This web application aims to help people chose the games they want to play. It does it by providing several features described bellow.
 
-Username: ItbaAdmin
+## What was it built on?
 
-Password: itbaadmin
+* Maven 3.6.3
+* Java 8
+* Spring Framework 4.2.5
+* JPA 1.0.0
+* Logback 1.1.2
+* Mockito 2.25.1
+* JUnit 4.11
 
-## CUENTA USUARIO:
+## Requirements to run
 
-Username: ItbaUser
+This web application requires having the following dependencies:
 
-Password: itbauser
+* Maven 3.6.3     (https://maven.apache.org/download.cgi)
+* Java 8 JDK      (https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html)
+* Tomcat 7.0.76   (https://archive.apache.org/dist/tomcat/tomcat-7/v7.0.76/bin/)
+* PostgreSQL 12   (https://www.postgresql.org/download/)
 
-##i18n de emails
-Para probar la internacionalización de mails se debe crear una nueva cuenta tras cambiar el lenguaje del browser o cambiando la contraseña del usuario.
+## How to deploy
 
-Al registrarlo o cambiar su contraseña se actualizará el locale usado por el usuario.
+1. Clone this repository and go into the `QuestLog` directory:
+```bash
+git clone https://github.com/prausela/QuestLog.git
+cd QuestLog/
+```
+2. Run the following command to create a Maven webapp.war for Tomcat:
+```bash
+mvn clean package
+```
+3. Copy your newly created webapp.war file into your Tomcat webapps folder:
+```bash
+cp webapp/target/webapp.war ${CATALINA_HOME}/webapps
+```
+4. Start Tomcat:
+```bash
+${CATALINA_HOME}/bin/startup.sh
+```
+5. Open your browser and go to the following url:
+http://localhost:8080/webapp_war/
+6. That's it! Enjoy choosing your games to play, reviewing them and interacting with other users!
